@@ -1,15 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
     <head>
         <meta charset="UTF-8" />
-        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Снежный кликер</title>
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
         <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
     </head>
     <body>
-        <h1 class="title">Hello World</h1>
-        <div id="mainDiv">Hello Div</div>
-        <br />
-        <button onclick="buttonClicked()">Click me</button>
+        <div class="game-container">
+            <div class="score">❄️ Снежинок: <span id="score">0</span></div>
+            <div id="click-area">❄️<br />Кликай!</div>
+
+            <div class="upgrades">
+                <button id="auto-snow">Авто-снег (0) - 10❄️</button>
+                <button id="multiplier">×2 очки - 50❄️</button>
+            </div>
+
+            <div class="actions">
+                <button id="save-btn">💾 Сохранить в Telegram</button>
+            </div>
+
+            <div id="snow-container"></div>
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
